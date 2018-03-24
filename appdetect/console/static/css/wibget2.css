@@ -1,0 +1,87 @@
+/******testin 2.1新增模块 独立导航********/
+.personal-nav{width:100%;height:50px;line-height:50px;background:#fff;box-shadow:0 5px 5px #dededf}
+.personal-nav ul{max-width:1220px;margin:0 auto}
+.personal-nav ul li{float:left;padding:0 15px;margin-right:15px}
+.personal-nav ul li a{font-size:14px;color:#666}
+.personal-nav ul li i{margin-right:5px}
+.personal-nav ul .active{border-bottom:2px solid #22a4e6}
+.personal-nav ul .active a{color:#00abe6}
+/******testin 2.1新增模块********/
+.box-shadow{box-shadow:1px 1px 2px #ccc}
+.app-bar-inf dt img:nth-child(2){margin-left:20px}
+.tip-blue.border-btu{border:1px solid #22a4e5;color:#22a4e5;background:0 0}
+.app-bar .app-vision label{width:80px;text-align:right;display:inline-block}
+.appkey a{color:#22a4e5}
+.new-width42{width:38%;margin-top: 12px;}
+.app-bar .app-vision.new-width33{width:37%;margin-top: 12px;}
+.app-bar .app-upload.new-width25{width:25%;}
+.new-number{float:left;width:33.33%;margin-top:25px}
+.new-number p{text-align:center;color:#999}
+.new-number p:nth-child(1){font-size:24px;color:#333}
+.diy_select_list.new-ulborder{border:none}
+.new-mainbx{height:55px;padding-top:18px;margin:0 auto;background:#fff;padding-left:20px;padding-right:20px;border-radius:5px;box-shadow:0 2px 2px #ccc}
+.edition-cion{float:left;width:15px;height:16px;margin-top:12px;margin-right:10px}
+.upload-date{float:right;padding-right:30px;color:#999;font-weight:100}
+a.return-bbt{border:1px solid #22a4e6;background:0 0;color:#22a4e6}
+a.return-bbt:hover{background:0 0;border:1px solid #22a4e6;}
+.input-bor-bttom{border-bottom:1px solid #ccc;line-height:20px}
+.start-test{background:#22a4e6;color:#fff;border:1px solid #22a4e6;margin-right:20px}
+.start-test:hover{background:#22a4e6;color:#fff;border:1px solid #22a4e6}
+/******testin 2.1新增模块 崩溃分析********/
+.bkfx-2-1{margin:20px}
+.bkfx-2-1 li{float:left;background:#f7f7f7;border-radius:0 5px 5px 0;height:100px;margin-right:1.5%;border-left:6px solid #e36159;width:23.8%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+.bkfx-2-1 li:nth-child(2){border-left:6px solid #ffac00}
+.bkfx-2-1 li:nth-child(3){border-left:6px solid #00c185}
+.bkfx-2-1 li:nth-child(4){border-left:6px solid #22a4e6;margin-right:0}
+.bkfx-2-1 li span{display:block;width:100%;text-align:center}
+.bkfx-2-1 li .span1{margin-top:18px;line-height:44px;font-size:30px;color:#333}
+.bkfx-2-1 li .span2{font-size:14px;color:#999}
+/******testin 2.1新增模块 版本信息********/
+.nc-table{margin-top:20px}
+.nc-table .table-bordered{margin:20px}
+.table-bordered i{letter-spacing:20px;cursor:pointer}｀
+.table-bordered tr td{border-bottom:1px solid #e9e9e9}
+.setting-td-posi{width:100%;background-color:#fcfcfc;padding:30px 0;display:none}
+.setting-td-posi .btn-switch{float:left;margin-top:6px}
+.switch-tip{float:left;font-size:14px;color:#999;margin:10px 0 0 20px}
+.setting-td-posi-box{line-height:normal}
+.setting-td-posi .zr_form-floor{margin-bottom:10px}
+.bb-commit{margin:20px 0 0 160px}
+.setting-td-posi .zr_area-style{border:1px solid #ccc}
+.setting-td-posi .zr_input-style{width:946px;background: #fff;}
+.setting-td-posi .btn-gray-md{border:1px solid #ccc;background:transparent;color:#333;margin-left:20px}
+.nc-table .grid-view table{width:97.5%}
+.invite-member{float:right;margin-right:1.25%;color:#22a4e6}
+.invite-member i{margin-right:5px;font-size:18px}
+/******testin 2.1新增模块 应用合并********/
+.app-merge{background:#fff;box-shadow:1px 1px 2px #ccc;margin-top:20px}
+.app-merge .tabs-tl{padding-left:20px}
+.diy_select_list li:hover span{color:#fff}
+.cont-box .cont-tl{padding-top:11px}
+.main{margin-top:130px;/*box-shadow:0 2px 5px #d9d9d9*/}
+.tabs-tl .active a{color:#22a4e5}
+
+.zr_hb .kz_selct_box,.zr_hb .kz_text_box{float:none;display:inline-block;vertical-align:middle}
+.kz_text_box{margin-right:30px}
+.ac1{margin-top:60px;margin-bottom:60px}
+.ac1,.ac2{text-align:center}
+.ac2{margin-bottom:60px}
+.ac1 .left-span{margin-right:30px}
+.ac1 .center-sapn{margin:0 20px;color:#999}
+.color666{color:#666;margin-top:2px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;width: 88px}
+.ac2 .zrinline{display:inline-block;vertical-align:top}
+.ac2 .midpic{margin:33px 18px}
+.zr_nav{width:100%;height:50px;background-color:#FFF;position:fixed;top:50px;z-index:1;line-height:42px;box-shadow:0 2px 5px #dededf}
+.zr_nav .cont-tl{width:1220px;margin:0 auto}
+.zr_nav .tabs-tl li{height:50px;line-height:50px}
+.zr_nav .tabs-tl li .icon{margin-right:5px}
+.zr_nav .tabs-tl .active a{height:48px;color:#22a4e5}
+.kz_text_box{width:370px;height:40px;float:left;border:1px solid #ccc;border-radius:5px;color:#000;font-size:14px;box-sizing:border-box}
+.kz_text_box .text-input{height:100%;padding-left:10px}
+.kz_text_box .text-input input{height:100%;line-height:39px;width:100%}
+.new-mainbx .text_list span:last-child{width: auto;}
+.resend{ color: #999; }
+.resend:hover{ color: #22a4e6; }
+
+.big_div {background: #fff; box-shadow: 0px 2px 2px #ccc; border-radius: 5px}
+#editicon{display: inline-block;width: 70%;}

@@ -1,0 +1,143 @@
+.container1{
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	width: 200px;
+	height: 400px;
+
+}
+
+.container1>ul {
+ 	position: absolute;
+ 	width: 200px;
+ 	height: 35px;
+ 	background-color: #424040;
+  }
+
+ .container1>ul>li>a{
+ 	position: relative;
+    top: 35px;
+    left: 10px;
+ }
+
+
+
+ section {
+ 	position: relative;
+ 	margin-left:250px;
+ 	margin-right: 15px;
+ 	/*margin-top: 100px;*/
+	width:1070px;
+	/*top: 100px;*/
+ }
+
+
+
+body {
+  padding-top: 0px;
+  /*background: url(../images/bg1.jpg);*/
+  /*background-color:rgba(142, 195, 126, 0.43);*/
+
+}
+
+.submit{
+  background: -webkit-linear-gradient(top,rgba(255,255,255,.15) 0%,#eee 100%);
+  border-radius: 10px;
+  /*float: left;*/
+  font: bold 14px Helvetica, Arial, sans-serif;
+  height: 35px;
+  /*margin: 20px 0 35px 15px;*/
+  margin-top: 20px;
+  position: relative;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  width: 90px;
+}
+
+.form-group1{
+	margin-top: 8px;
+	list-style-type: none;
+
+}
+
+.font{
+	font-weight: 900;
+	font-size: 25px;
+	/*line-height: 250px;*/
+	font-family:  "Microsoft YaHei",sans-serif;
+	color: #cc1313;
+	letter-spacing: 3px;
+}
+
+.font1{
+	font-weight: 400;
+	font-size: 16px;
+	/*line-height: 250px;*/
+	font-family:  "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	line-height: 30px;
+}
+
+p.font1 span{
+	font-weight: bold;
+	color: #cc1313;
+}
+
+.container2{
+	position: absolute;
+	width: 150px;
+	margin-left:30px; 
+	padding-top: 120px;
+}
+
+.font2{
+	font-size: 17px;
+	font-family: "Microsoft YaHei";
+	line-height: 30px;
+
+}
+
+p.font2 span{
+	font-weight: bold;
+	color: #286090;
+}
+
+.table{
+	table-layout: fixed;
+	margin-top: 30px;
+	width: auto;
+}
+	
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, 
+.table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
+{
+ 	min-width: 90px;
+ 	padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #286090;
+    font-size: 15px;
+
+  }
+.font3{
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+	line-height: 30px;
+	color: #286090;
+
+}
+
+.form-group2{
+	position: absolute;
+	left: 40%;
+	font-family:"Microsoft YaHei";
+	font-size: 16px;
+	font-weight: bold; 
+	transform: translate(50%,90px);
+
+.hhh{
+	
+	/*margin-left: 20px;*/
+	margin-right: 20px;
+}
+
+
+

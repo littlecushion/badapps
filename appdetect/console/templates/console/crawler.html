@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
+    <title>Dashboard Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link type="text/css" href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link type="text/css" href="{% static 'css/dashboard.css' %}" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script type="{% static 'text/javascript" src="js/ie-emulation-modes-warning.js' %}"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="data1" >
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Malicious APP Detection</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="../Home">Home</a></li>
+              <li><a href="../login">Login</a></li>
+              <li><a href="../crawler">Crawler</a></li>
+              <li><a href="../../logout">Logout</a></li>
+            </ul>
+           <!--  <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form> -->
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Crawler</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+   <!--  <div class="image">
+      <img src="../../static/images/1.gif" height="400" width="400">
+    </div> -->
+    <div class="lead1">
+      <div>
+        <p>检测服务</p>
+      </div>
+      <!-- <ul class="lead2"> -->
+        <li class="lead3"><a href="#data1">网站爬取APP</a></li>
+        <li class="lead3"><a href="#local3">本地上传APP</a></li>
+        <li class="lead3"><a href="#text1">自定义敏感词检测</a></li>
+        <!-- <li class="lead3"><a href="#text2">本地上传检测文本</a></li> -->
+      <!-- </ul> -->
+    </div>
+
+    <div class="form">
+      <div class="form1">  
+            <ul class="form-group2">
+                <li>APP信息存储目录</li>
+                <input type="text" placeholder="Search"autofocus="autofocus" required>
+                        
+            </ul>  
+
+           <ul class="form-group1">
+             <li >域名</li>
+                <select class="form-control1" name="cars">
+                    <option value="volvo">mi.com</option>
+                    <option value="saab">appchina.com</option>
+                    <option value="fiat">anzhi.com</option>
+                    <option value="audi">mumayi.com</option>
+                </select>                       
+           
+             <button type="submit" class="form-control1" onclick="alert('正在爬取app数据！')">开始爬取</button>
+         
+            </ul>
+      </div>                   
+           
+          <!--   <div class="form-group1" >
+                <span class="font">APP下载目录:</span>
+                <input type="text" class="form-control1" placeholder="Search">
+                <button type="submit" class="form-control1">开始下载</button>
+            </div> -->
+
+            <div id="local3" class="form1">
+              
+              <form action="/upload/" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+              <!-- <span><a href="../file">本地文件上传</a></span> -->
+                <ul  class="form-group3">
+                        <li class="font2">本地APP上传 </li>
+                        <input class="font3" type="file" />
+
+                        <input class="font3" type="submit" value="上传APP" />
+                        
+                </ul>
+              </form>
+            </div> 
+          
+                <div class="page2" style="display: none">page2</div>
+                <div class="page3" style="display: none">page3</div> 
+      
+
+       <div class="form1"> 
+         <form action="/upload_word_text/" method="POST" enctype="multipart/form-data" >
+           {% csrf_token %}
+         
+          <ul id="text1"  class="form-group3">
+              <li class="font2">敏感词文本上传</li>
+              <input type="file" class="font3" name="file" />
+            
+              <input type="submit" class="font3" value="上传敏感词" />
+          </ul>
+         </form>
+         <br />
+         <form  action="/upload_detect_text/" method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          
+          <ul id="text2" class="form-group3">
+              <li >待检测文本上传</li>
+              <input type="file" class="font3"  name="file" />
+              
+              <input type="submit" class="font3" value="上传文本" />
+          </ul>
+         </form>
+         <br />
+
+         <form action="/text_detect_result/" method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          <!-- <label class="font2">请上传待检测文本</label> -->
+          <div>
+              <input type="submit" class="font4" value="开始检测" />
+          </div>
+         </form>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <!-- <script src="js/holder.min.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script type="text/javascript" src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('ul.nav li').click(function() {
+            $('ul.nav li').removeClass('active');
+            $(this).addClass('active');
+
+            if ($('#a').hasClass('active')) {
+                $('.page1').show();
+                $('.page2').hide();
+                $('.page3').hide();
+            }
+            if ($('#b').hasClass('active')) {
+                $('.page1').hide();
+                $('.page2').show();
+                $('.page3').hide();
+            }
+            if ($('#c').hasClass('active')) {
+                $('.page1').hide();
+                $('.page2').hide();
+                $('.page3').show();
+            }
+        })
+
+    })
+    </script>
+</body>
+
+</html>

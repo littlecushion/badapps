@@ -1,0 +1,4 @@
+*.pyc
+.scrapy
+repo/databases
+repo/apps
